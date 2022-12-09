@@ -1,0 +1,122 @@
+/* HEADER */
+ .navigation{
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid #ECECEC;
+   
+ }
+ 
+ 
+ 
+
+ .navigation__logo{
+display: inline-block;
+/* padding-top: 24px;
+padding-bottom: 25px; */
+margin-right: 93px;
+
+font-family: $secondary-font-family;
+font-weight: $secondary-font-weight;
+font-size: 26px;
+line-height: 1.2;
+letter-spacing: 0.03em;
+color: #2196F3;
+
+ }
+  .navigation__logo--right{
+display: inline-block;
+/* padding-top: 24px;
+padding-bottom: 25px;  */
+color: #000000; }
+
+ .navigation__list{
+display: flex;
+margin-right: 318px;
+
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+color: $title-color;
+
+ }
+.navigation__box{
+   display: flex;
+   align-items: center;
+}
+.navigation__line:not(:last-child){
+   margin-right: 50px;
+}
+
+ /* .navigation__list li:not(:last-child)
+  {
+      margin-right: 50px;
+ } */
+ 
+ .navigation__img{
+   margin-right: 10px;
+   transition-property: stroke, transform;
+   transition-duration: $duration;
+   transition-timing-function: $timing-function;
+ } 
+  
+ .navigation__icon:not(:last-child){
+   margin-right: 30px;
+ }
+ 
+  .navigation__img:hover,
+  .navigation__img:focus{
+   stroke: $color-hover;
+   
+}  
+   
+ .navigation__link{
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 32px;
+   color:$title-color;
+   transition-property: color, transform;
+   transition-duration: $duration;
+   transition-timing-function: $timing-function;
+
+   &:hover,
+   &:focus{
+  color:$color-hover;
+   }
+ }
+ .navigation__line{
+position: relative;
+
+
+} 
+// .navigation__link:hover, 
+//  .navigation__link:focus{ 
+//    color:$color-hover;  
+   
+//  }
+
+
+ .navigation__portfolio,
+ .navigation__studio{
+   color: $color-hover;
+ }
+ .navigation__portfolio::after,
+ .navigation__studio::after{
+   content: "";
+   position: absolute;
+   left:0;
+   bottom: 0;
+   width: 100%;
+   height: 4px;
+   border-radius: 2px;
+   background-color: currentColor; 
+ }
+ 
+ .navigation__contact{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.1;
+letter-spacing: 0.02em;
+color: $primary-text-color;
+
+ }

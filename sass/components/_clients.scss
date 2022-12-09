@@ -1,0 +1,75 @@
+/* CLIENTS */
+.clients{
+padding-bottom: 94px;
+}
+.clients__title{
+padding-top: 90px;
+margin-bottom: 50px;
+color: $title-color;   
+font-weight: $secondary-font-weight;
+font-size: 36px;
+line-height:1,17;
+text-align: center;
+letter-spacing: 0.03em;
+}
+ .clients__field{
+   display: flex;
+   justify-content: space-between;
+   
+} 
+ 
+.clients__box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 170px;
+   height: 92px; 
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+   padding: 16px 32px;
+    transition-property:border, transform;
+   transition-duration: $duration;
+   transition-timing-function: $timing-function;
+
+    &:hover,
+    &:focus{
+     border: 1px solid $color-hover;  
+    }
+ 
+   // &:hover{
+   //    .clients__icon{
+   //      fill: $color-hover; 
+   //    }
+   // }
+
+   //  &:hover .clients__icon,
+   //  &:focus .clients__icon{
+   //   fill: $color-hover;  
+   //  }
+}
+// .clients__box:hover, 
+// .clients__box:focus{
+//    border: 1px solid $color-hover;
+//   }
+
+.clients__icon{
+width: 106px;
+height: 60px;
+fill: #AFB1B8;
+transition-property: fill, transform;
+transition-duration: $duration;
+transition-timing-function: $timing-function;
+
+  .clients__box:hover &,
+  .clients__box:focus &{
+     fill: $color-hover; 
+  }
+}
+ 
+ 
+
+/* .clients__icon:hover,
+.clients__icon:focus{
+   fill: #2196F3;
+  
+}  */
