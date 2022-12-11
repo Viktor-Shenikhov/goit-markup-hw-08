@@ -2,8 +2,8 @@
    background-color:#C4C4C4;
    padding-top: 200px;
    padding-bottom: 200px;
-   margin-bottom: 94px;
-   //  width: 480px;
+   margin-bottom: 60px;
+   // width: 480px;
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
@@ -14,56 +14,52 @@
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
        url(../images/hero/mob_480hero@2x.jpg);
     }
-    @media screen and (min-width:769px){
-      width: 1600px;
-      height: 600px;
+    @media screen and (min-width:768px){
+           
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+     url(../images/hero/tab_768hero@1x.jpg);
+     @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+       url(../images/desk/tab_768hero@2x.jpg);}
+    }
+    @media screen and (min-width:1200px){
+      // width: 1600px;
+      // height: 600px;
+      margin-bottom: 94px;
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
      url(../images/hero/desk_1600hero@1x.jpg);
      @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi),(min-resolution: 2dppx){
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-       url(../images/desk/mob_1600hero@2x.jpg);
-    }
-    }
-
-    
-
-   }
-  
-   
-      
-       
-    
-
-
-    
-
-   //  background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-   //   url(../images/hero-img.jpg); 
-   
-   
-
-
-.hero__title{
+       url(../images/desk/desk_1600hero@2x.jpg);}
+}
+}
+         
+ .hero__title{
 display: block;
 margin-bottom: 30px;
-
-font-weight: 900;
-font-size: 44px;
-line-height: 1.4;
+font-size: 26px;
+line-height: 1.61;
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
+
+font-weight: 900;
+@media screen and (min-width:1200px){
+font-size: 44px;
+line-height: 1.36;
+}
+
 }
 
 .hero__btn{
 display: block;
+min-width: 200px;
 margin: 0 auto;
-padding: 10px 32px;
-
+padding: 10px 24px;
 font-weight: $secondary-font-weight;
 font-size: 16px;
-line-height: 1.9;
+line-height: 1.88;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
