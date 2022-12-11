@@ -27,7 +27,8 @@ letter-spacing: 0.03em;
  .clients__field{
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between; 
+   justify-content: space-between;
+   
    
 } 
  
@@ -77,6 +78,10 @@ letter-spacing: 0.03em;
 // .clients__box:focus{
 //    border: 1px solid $color-hover;
 //   }
+
+// .clients__box:nth-child(2n+1){
+//     margin-right: 30px;
+// }
 
 .clients__box:nth-child(n+5){
    @media screen and (min-width:480px){
