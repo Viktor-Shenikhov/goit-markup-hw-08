@@ -1,7 +1,13 @@
 /* WORK */
+
 .work{
+ @media screen and (max-width:1199px){
+      display: none;
+   }
+}
+.work__wrapper{
    display: flex;
-   margin-bottom: 94px;
+   margin-bottom: 94px; 
   
 }
 .work__item:not(:last-child){

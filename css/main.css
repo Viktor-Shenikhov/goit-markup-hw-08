@@ -352,7 +352,13 @@ ul {
 }
 
 /* WORK */
-.work {
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
+.work__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
