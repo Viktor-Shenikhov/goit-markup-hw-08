@@ -210,7 +210,7 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-bottom: 60px;
-  min-width: 100%;
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -328,7 +328,7 @@ ul {
 .benefits__item {
   margin-right: 0;
   margin-bottom: 30px;
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .benefits__item {
@@ -338,6 +338,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .benefits__item {
     margin-bottom: 0px;
+    width: 270px;
   }
 }
 
@@ -598,27 +599,27 @@ ul {
 }
 
 .foto-desinger {
-  background: url(4853.jpg);
   border-radius: 0px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .foto-developer {
-  background: url(5844.jpg);
   border-radius: 0px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .foto-marketing {
-  background: url(16166.jpg);
   border-radius: 0px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .foto-uidesigner {
-  background: url(2968);
   border-radius: 0px;
   margin-bottom: 30px;
+  width: 100%;
 }
 
 .name__box {
@@ -730,6 +731,7 @@ fill: #FFFFFF;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
+  width: 100%;
   height: 92px;
   border: 1px solid #AFB1B8;
   border-radius: 4px;
@@ -858,7 +860,12 @@ fill: #FFFFFF;
 }
 @media screen and (max-width: 767px) {
   .footer__logo {
-    padding-left: 163px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1099,7 +1106,7 @@ fill: #FFFFFF;
   -ms-flex-line-pack: center;
       align-content: center;
   margin-bottom: 20px;
-  min-width: 450px;
+  width: 100%;
   min-height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: inherit;
@@ -1112,9 +1119,14 @@ fill: #FFFFFF;
   transition-duration: 2500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
+@media screen and (min-width: 768px) {
+  .signup__email {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .signup__email {
-    min-width: 358px;
+    width: 100%;
     margin-right: 12px;
   }
 }
