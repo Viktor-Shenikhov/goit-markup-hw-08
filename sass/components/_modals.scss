@@ -8,6 +8,26 @@
    transform: scale(1);
    transition-duration: 1000ms;
    transition-timing-function: $timing-function;
+
+   overflow-y: scroll;
+   // @media screen and(max-width:767px) {
+   //    width: 450px;
+   //    height: 609px;
+   //    margin-left: 15px;
+   //    margin-right: 15px;
+   //    margin-top: 94px;
+   //    margin-bottom: 94px;    
+   // }
+   // @media screen and(max-width:1199px){
+   //    width: 450px;
+   //    height: 609px; 
+   //    margin-left: 159px;
+   //     margin-right: 159px;
+   //     margin-top: 208px;
+   //     margin-bottom: 208px; 
+     
+   // }
+
 }
    .is-hidden{
    opacity: 0;
@@ -20,10 +40,15 @@
    position: absolute;
    top:50%;
    left:50%;
+   width: 450px;
+   height: 609px;
    transform: translate(-50%, -50%);
+   background-color: #FFFFFF;
+
+   @media screen and(min-width:1200px){
    width: 528px;
    height: 581px;
-   background-color: #FFFFFF;
+   }
      
    
 } 
@@ -64,15 +89,21 @@
 .modal__title{
 font-weight: $secondary-font-weight;
 font-size: 20px;
-line-height: 1.15;
+line-height: 1.5;
 text-align: center;
 letter-spacing: 0.03em;
 color: $title-color;
 margin-bottom: 12px;
 
-}
+ @media screen  and(min-width: 1200px){
+ line-height: 1.15;
+ }
+ }  
+
+
+
 .modal__text{
- margin-bottom: 4px; 
+margin-bottom: 4px; 
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
@@ -80,7 +111,7 @@ color: $primary-text-color;
 }
 .modal__fields{
 margin-bottom:10px;
-width: 448px;
+width: 370px;
 height: 40px;
 left: 576px;
 top: 314px;
@@ -91,6 +122,11 @@ padding-left: 42px;
 transition-property: border-color, box-shadow, fill, transform;
 transition-duration: $duration;
 transition-timing-function: $timing-function; 
+
+@media screen  and(min-width: 1200px){
+ width: 448px;
+
+ }
 
 &:focus{
  border-color: $color-hover;
@@ -131,7 +167,7 @@ transition-timing-function: $timing-function;
 
 .modal__comment{
 margin-bottom: 18px;
-width: 448px;
+width: 370px;
 height: 120px;
 left: 576px;
 top: 518px;
@@ -145,9 +181,13 @@ transition-duration: $duration;
 transition-timing-function: $timing-function; 
 
 font-size: 12px;
-line-height: 14px;
+line-height: 1.16;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
+
+@media screen  and(min-width: 1200px){
+width: 448px; 
+}
 
 &:focus{
   border-color: $color-hover;
@@ -165,17 +205,27 @@ color: rgba(117, 117, 117, 0.5);
 .modal__agreement{
  /* position: relative; */
 margin-bottom: 32px;
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.16;
 letter-spacing: 0.03em;
 color: $primary-text-color;
+
+@media screen  and(min-width: 1200px){
+font-size: 14px;
+line-height: 1.71;
+}
 }
 
 .modal__link{
-font-size: 14px;
-line-height: 1.71;
+font-size: 12px;
+line-height: 1.16;
 letter-spacing: 0.03em;
 color: $primary-text-color;
+
+@media screen  and(min-width: 1200px){
+ font-size: 14px;
+ line-height: 1.71;
+}
 
 }
 .modal__link--underlined{
