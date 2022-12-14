@@ -63,12 +63,16 @@ ul {
 
 /* HEADER */
 .navigation {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   border-bottom: 1px solid #ECECEC;
 }
 
@@ -97,11 +101,15 @@ ul {
 }
 
 .burger {
-  display: block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
   width: 40px;
   height: 40px;
   border: none;
-  background-color: inherit;
+  background-color: transparent;
 }
 @media screen and (min-width: 768px) {
   .burger {
@@ -109,6 +117,31 @@ ul {
   }
 }
 
+.burger .burger__cross {
+  display: none;
+}
+
+.burger .is-open .burger__cross {
+  display: block;
+}
+
+.burger .is-open .burger__menu {
+  display: none;
+}
+
+.burger__field {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: teal;
+  padding: 10px;
+  text-align: center;
+}
+.burger__field.is-open {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .burger__field {
     display: none;

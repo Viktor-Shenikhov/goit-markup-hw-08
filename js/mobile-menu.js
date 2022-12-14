@@ -1,6 +1,6 @@
 (() => {
-  const mobileMenu = document.querySelector(".js-menu-container");
-  const openMenuBtn = document.querySelector(".js-open-menu");
+  const mobileMenu = document.querySelector("[data-menu-button]");
+  const openMenuBtn = document.querySelector("[data-menu]");
   const closeMenuBtn = document.querySelector(".js-close-menu");
   const toggleMenu = () => {
     const isMenuOpen =
@@ -25,3 +25,4 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
+ 

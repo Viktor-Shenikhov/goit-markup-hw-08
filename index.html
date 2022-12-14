@@ -17,18 +17,17 @@
       <header>
       <div class="container  navigation">
         <a class="navigation__logo" href="#">Web<span class="navigation__logo--right">Studio</span></a>
-        <button class="burger"
+        <button class="burger is-open" data-menu-button
         type="button"
         aria-expanded="false"
-        aria-controls="container"
-        data-menu-button>
+        aria-controls="burger__field">
         <svg width="24" height="16" 
         aria-label="Переключатель мобильного меню">
         <use class="burger__cross" href="./images/icon.svg#icon-mob-close-btn"></use>
         <use class="burger__menu" href="./images/icon.svg#icon-burger-btn"></use>
         </svg>
       </button>
-      <div class="burger__field">
+      <div class="burger__field" id="burger-field" data-menu>
 
       </div>
 
@@ -563,8 +562,8 @@
           </button>
         </div>
       </div>
-    <script src="./js/modal.js">
-     </script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
             
   </body>
 </html>
