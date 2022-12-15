@@ -87,16 +87,16 @@ ul {
   letter-spacing: 0.03em;
   color: #2196F3;
 }
+@media screen and (min-width: 768px) {
+  .navigation__logo {
+    margin-right: 88px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .navigation__logo {
     font-size: 26px;
     line-height: 1.19;
     margin-right: 93px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .navigation__logo {
-    margin-right: 88px;
   }
 }
 
@@ -156,6 +156,16 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__mobile {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
   }
 }
 
@@ -177,6 +187,16 @@ ul {
   letter-spacing: 0.02em;
   color: #212121;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__list {
+    margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__list {
+    margin-right: 205px;
+  }
+}
 
 .navigation__box {
   display: -webkit-box;
@@ -186,15 +206,17 @@ ul {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
 .navigation__line:not(:last-child) {
   margin-right: 50px;
 }
 
-/* .navigation__list li:not(:last-child)
- {
-     margin-right: 50px;
-} */
 .navigation__img {
   margin-right: 10px;
   -webkit-transition-property: stroke, -webkit-transform;
@@ -232,6 +254,33 @@ ul {
 }
 .navigation__link:hover, .navigation__link:focus {
   color: #2196F3;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__link {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation__box__envelope {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation__box__phone {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .navigation__line {

@@ -10,7 +10,7 @@
  .navigation__logo{
   
  display: inline-block;
-// margin-right: 276px;
+
 
 padding-bottom: 16px;
 padding-top: 16px;
@@ -22,14 +22,16 @@ line-height: 1.17;
 letter-spacing: 0.03em;
 color: #2196F3;
 
+@media screen and (min-width:768px){
+  margin-right: 88px;
+}
+
 @media screen and (min-width:1200px){
  font-size: 26px;
 line-height: 1.19;
 margin-right: 93px; 
 }
-@media screen and (min-width:768px){
-  margin-right: 88px;
-}
+
 
  }
  .burger{
@@ -81,6 +83,11 @@ margin-right: 93px;
    
    @media screen and (min-width:768px){
    display: flex;
+   align-items: center;
+   
+   }
+   @media screen and (min-width:1200px){
+    flex-grow: 2;
    }
   }
 
@@ -93,32 +100,52 @@ color: #000000; }
  .navigation__list{
 display: flex;
 margin-right: 305px;
-
 font-weight: 500;
 font-size: 14px;
 line-height: 1.1;
 letter-spacing: 0.02em;
 color: $title-color;
 
+@media screen and (min-width:768px) and (max-width:1199px){
+margin-right: 50px;
+// margin-right: 0;
+}
+@media screen and (min-width:1200px){
+margin-right: 205px;
+}
+
  }
 .navigation__box{
    display: flex;
    align-items: center;
+
+   @media screen and (min-width:768px) and (max-width:1199px){
+    // flex-direction: column;
+    flex-wrap: wrap;
+   }
 }
 .navigation__line:not(:last-child){
    margin-right: 50px;
 }
 
- /* .navigation__list li:not(:last-child)
-  {
-      margin-right: 50px;
- } */
+.navigation__line:last-child{
+  @media screen and (min-width:1200px){
+  // margin-right: 105px;
+  }
+  
+}
+
+ 
  
  .navigation__img{
    margin-right: 10px;
    transition-property: stroke, transform;
    transition-duration: $duration;
    transition-timing-function: $timing-function;
+
+  //  @media screen and (min-width:768px) and (max-width:1199px){
+  //   display: none;
+  //  }
  } 
   
  .navigation__icon:not(:last-child){
@@ -144,7 +171,43 @@ color: $title-color;
    &:focus{
   color:$color-hover;
    }
+
+    @media screen and (min-width:768px) and (max-width:1199px){
+     padding: 0;
+     margin: 0;
+    }
  }
+ .navigation__box__envelope{
+  @media screen and (min-width:768px){
+    // display: flex;
+    // padding-top: 26px;
+    // padding-right: 15px;
+    // margin-bottom: 10px;
+     }
+    @media screen and (min-width:1200px){
+     align-items: center;
+     padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 40px;
+    }
+   
+ }
+ .navigation__box__phone{
+  @media screen and (min-width:768px){
+    // display: flex;
+    // padding-bottom: 21px;
+    //  padding-right: 30px;
+     
+  }
+  @media screen and (min-width:1200px){
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    
+    }
+ }
+
  .navigation__line{
 position: relative;
 
