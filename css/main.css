@@ -348,15 +348,32 @@ ul {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .navigation__contact::before {
+  .navigation__contact__envelope::before {
     content: "";
     display: inline-block;
-    width: 16px;
+    width: 14px;
     height: 10px;
     margin-right: 10px;
     color: #2196F3;
     background-image: url(..//../images/envelope-mob.svg);
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__contact__phone::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    margin-right: 10px;
+    color: #2196F3;
+    background-image: url(..//..//images/smartphone-mob.svg);
+  }
+}
+
+.navigation__icon:hover,
+.navigation__icon:focus {
+  stroke: #2196F3;
 }
 
 .navigation__img:hover,
@@ -436,6 +453,11 @@ ul {
   letter-spacing: 0.02em;
   color: #757575;
   padding: 0;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__contact {
+    margin-bottom: 10px;
+  }
 }
 
 /* BODY */
