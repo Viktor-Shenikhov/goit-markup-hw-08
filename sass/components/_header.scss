@@ -31,6 +31,7 @@ margin-right: 93px;
 
 
  }
+  
  .burger{
   display: inline-flex;
   margin: 0;
@@ -40,38 +41,73 @@ margin-right: 93px;
   border: none;
   background-color: transparent;
   z-index: 3;
+  &.is-open{
+    .burger__cross{
+      display:none;
+    }
+     .burger__menu{
+       display: block;
+     }
+  }
 
   @media screen and (min-width:768px){
   display: none;  
   }  
 
  }
-
-  .burger .burger__cross{
-     @media screen and(max-width:767px){
-     display: none;
-     
-     } 
-  }
-
-  .burger .is-open .burger__cross{
-   @media screen and(max-width:767px){
-   display: block;
-   
-   }  
-  }
-
-  .burger .is-open .burger__menu{
-   @media screen and(max-width:767px){
+ .burger__menu{
    display: none;
-   
    }
+ 
   
-  }
+ 
+
+  // .burger .burger__cross{
+  //    @media screen and(max-width:767px){
+  //    display: none;
+     
+  //    } 
+  // }
+
+  // .burger .is-open .burger__cross{
+  //  @media screen and(max-width:767px){
+  //  display: block;
+   
+  //  }  
+  // }
+
+  // .burger .is-open .burger__menu{
+  //  @media screen and(max-width:767px){
+  //  display: none;
+   
+  //  }
+  
+  // }
  .burger__cross,
  .burger__menu:hover{
   fill: #2196F3;
  }
+  // .menu-btn {
+  //   font-family: inherit;
+  //   position: relative;
+  //   z-index: 100;
+  //   top: 0;
+  //   left: 0;
+  //   height: 40px;
+  //   background-color: transparent;
+  //   border: none;
+  //   &.is-open {
+  //     .icon-burger {
+  //       display: none;
+  //     }
+  //     .icon-cross {
+  //       display: block;
+  //     }
+  //   }
+  // }
+  // .icon-cross {
+  //   display: none;
+  // }
  
  .burger__cross,
  .burger__menu:focus{

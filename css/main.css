@@ -112,28 +112,20 @@ ul {
   background-color: transparent;
   z-index: 3;
 }
+.burger.is-open .burger__cross {
+  display: none;
+}
+.burger.is-open .burger__menu {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .burger {
     display: none;
   }
 }
 
-@media screen and (max-width: 767px) {
-  .burger .burger__cross {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .burger .is-open .burger__cross {
-    display: block;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .burger .is-open .burger__menu {
-    display: none;
-  }
+.burger__menu {
+  display: none;
 }
 
 .burger__cross,
