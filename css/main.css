@@ -110,6 +110,7 @@ ul {
   height: 40px;
   border: none;
   background-color: transparent;
+  z-index: 3;
 }
 @media screen and (min-width: 768px) {
   .burger {
@@ -149,11 +150,12 @@ ul {
   .burger__field {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0%;
     left: 0;
     width: 100%;
-    height: 796px;
+    height: auto;
     background-color: white;
+    padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
   }
@@ -276,12 +278,16 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 305px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .navigation__list {
+    margin-right: 305px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation__list {
@@ -304,8 +310,13 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation__box {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -324,9 +335,28 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__img {
+    display: none;
+  }
+}
 
-.navigation__icon:not(:last-child) {
-  margin-right: 40px;
+@media screen and (min-width: 1200px) {
+  .navigation__icon:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .navigation__contact::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    margin-right: 10px;
+    color: #2196F3;
+    background-image: url(..//../images/envelope-mob.svg);
+  }
 }
 
 .navigation__img:hover,
@@ -353,7 +383,6 @@ ul {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .navigation__link {
-    padding: 0;
     margin: 0;
   }
 }
@@ -406,6 +435,7 @@ ul {
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #757575;
+  padding: 0;
 }
 
 /* BODY */
