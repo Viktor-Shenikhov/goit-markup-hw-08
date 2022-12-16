@@ -11,7 +11,6 @@
 display: block;
 padding-bottom: 16px;
 padding-top: 16px;
-
 font-family: $secondary-font-family;
 font-weight: $secondary-font-weight;
 font-size: 24px;
@@ -24,7 +23,7 @@ color: #2196F3;
 }
 
 @media screen and (min-width:1200px){
- font-size: 26px;
+font-size: 26px;
 line-height: 1.19;
 margin-right: 93px; 
 }
@@ -46,6 +45,7 @@ margin-right: 93px;
       display:none;
     }
      .burger__menu{
+      position: fixed;
        display: block;
      }
   }
@@ -87,28 +87,7 @@ margin-right: 93px;
  .burger__menu:hover{
   fill: #2196F3;
  }
-  // .menu-btn {
-  //   font-family: inherit;
-  //   position: relative;
-  //   z-index: 100;
-  //   top: 0;
-  //   left: 0;
-  //   height: 40px;
-  //   background-color: transparent;
-  //   border: none;
-  //   &.is-open {
-  //     .icon-burger {
-  //       display: none;
-  //     }
-  //     .icon-cross {
-  //       display: block;
-  //     }
-  //   }
-  // }
-  // .icon-cross {
-  //   display: none;
-  // }
- 
+  
  .burger__cross,
  .burger__menu:focus{
   fill: #2196F3;
@@ -127,10 +106,12 @@ margin-right: 93px;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  
-  
+  overflow-y: scroll;
+   
   &.is-open{
+     position: fixed;
     display: block;
+     z-index: 2;
     
   }
   }
