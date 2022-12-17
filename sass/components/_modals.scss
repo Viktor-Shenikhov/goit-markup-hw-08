@@ -82,8 +82,11 @@
 .modal__form{
    display: flex;
    flex-direction: column;
-   padding: 40px 26px 40px 54px;
+   padding: 80px;
    border: transparent; 
+   @media screen  and(min-width: 480px){
+   padding: 40px 26px 40px 54px;
+}
    
 }
 .modal__title{
@@ -110,8 +113,9 @@ letter-spacing: 0.01em;
 color: $primary-text-color;
 }
 .modal__fields{
+width: 300px;
+
 margin-bottom:10px;
-width: 370px;
 height: 40px;
 left: 576px;
 top: 314px;
@@ -122,6 +126,10 @@ padding-left: 42px;
 transition-property: border-color, box-shadow, fill, transform;
 transition-duration: $duration;
 transition-timing-function: $timing-function; 
+
+@media screen  and(min-width: 480px){
+ width: 370px;  
+}
 
 @media screen  and(min-width: 1200px){
  width: 448px;
@@ -166,8 +174,9 @@ transition-timing-function: $timing-function;
 }  */
 
 .modal__comment{
+width: 320px;
+
 margin-bottom: 18px;
-width: 370px;
 height: 120px;
 left: 576px;
 top: 518px;
@@ -184,6 +193,10 @@ font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 color: rgba(117, 117, 117, 0.5);
+
+@media screen  and(min-width: 480px){
+ width: 370px;  
+}
 
 @media screen  and(min-width: 1200px){
 width: 448px; 
@@ -255,6 +268,8 @@ color: #2196F3;
    position: relative;
    display:flex;
    flex-direction: column;
+
+   
      
 }
 .checkbox{
