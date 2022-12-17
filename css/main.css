@@ -35,8 +35,14 @@ img {
 }
 
 .primery {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .primery {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
 }
 
 h1,
@@ -1498,17 +1504,37 @@ fill: #FFFFFF;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-nav {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 34px;
+  }
 }
 
 .portfolio-nav__item {
   display: block;
+}
+@media screen and (max-width: 767px) {
+  .portfolio-nav__item {
+    display: inline;
+    max-width: 33.33%;
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
 }
 .portfolio-nav__item:hover, .portfolio-nav__item:focus {
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1551,6 +1577,11 @@ fill: #FFFFFF;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 469px) {
+  .portfolio-nav__btn {
+    margin-right: 0;
+  }
+}
 .portfolio-nav__btn:hover, .portfolio-nav__btn:focus {
   color: #FFFFFF;
   background: #2196F3;
@@ -1564,10 +1595,15 @@ fill: #FFFFFF;
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    gap: 0;
+  }
+}
 
 .portfolio-box {
   position: relative;
-  width: 370px;
+  width: 100%;
   border: 1px solid #EEEEEE;
   -webkit-transition-property: -webkit-box-shadow, -webkit-transform;
   transition-property: -webkit-box-shadow, -webkit-transform;
@@ -1581,6 +1617,29 @@ fill: #FFFFFF;
 .portfolio-box:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-box {
+    max-width: calc(50% - 30px);
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+  .portfolio-box:nth-child(2n) {
+    margin-right: 0;
+  }
+  .portfolio-box:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-box {
+    max-width: calc(33% - 30px);
+    margin-bottom: 30px;
+    margin-right: 30px;
+  }
+  .portfolio-box:nth-child(n+7) {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-box__title {
