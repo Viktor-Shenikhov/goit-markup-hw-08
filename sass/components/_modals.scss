@@ -53,10 +53,12 @@
    
 } 
  .modal__btn--closed{
+   @media screen  and(min-width: 320px){
    position: absolute;
    top: 0;
-   right: 0;
-
+   right: 15%;
+   
+  
    width: 30px;
    height: 30px; 
    margin-top: 8px;
@@ -67,7 +69,13 @@
    border-radius: 50%;
    transition: fill, transform;
    transition-duration: $duration;
-   transition-timing-function: $timing-function; 
+   transition-timing-function: $timing-function;
+   }
+   
+   @media screen  and(min-width: 480px){
+   top: 0;
+   right: 0; 
+   }
 
     &:hover,
     &:focus{
@@ -75,15 +83,17 @@
     }
 }  
 
-// .modal__btn--closed:hover,
-// .modal__btn--closed:focus{
-//    fill: $color-hover;
-// }
+
 .modal__form{
+   @media screen  and(min-width: 320px){
    display: flex;
    flex-direction: column;
-   padding: 80px;
-   border: transparent; 
+   padding-right:80px;
+   padding-left: 80px; 
+   padding-top: 40px;
+   padding-bottom: 40px;
+   border: transparent;   
+   }
    @media screen  and(min-width: 480px){
    padding: 40px 26px 40px 54px;
 }
@@ -174,7 +184,7 @@ transition-timing-function: $timing-function;
 }  */
 
 .modal__comment{
-width: 320px;
+width: 300px;
 
 margin-bottom: 18px;
 height: 120px;
