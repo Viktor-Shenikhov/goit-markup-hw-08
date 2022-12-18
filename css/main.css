@@ -117,6 +117,14 @@ ul {
   border: none;
   background-color: transparent;
   z-index: 3;
+  -webkit-transition-property: fill, -webkit-transform;
+  transition-property: fill, -webkit-transform;
+  transition-property: fill, transform;
+  transition-property: fill, transform, -webkit-transform;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .burger.is-open .burger__cross {
   display: none;
@@ -135,17 +143,8 @@ ul {
   display: none;
 }
 
-.burger__cross:hover,
-.burger__cross:focus {
-  fill: #2196F3;
-  color: #2196F3;
-}
-
-.burger__menu:hover {
-  fill: #2196F3;
-}
-
-.burger__menu:focus {
+.burger:hover,
+.burger:focus {
   fill: #2196F3;
 }
 
